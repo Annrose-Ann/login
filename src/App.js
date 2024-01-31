@@ -1,4 +1,4 @@
-import Loginform from './src/components/Loginform/Loginform';
+import Loginform from './components/Loginform/Loginform';
 function App() {
   return (
     <div>
