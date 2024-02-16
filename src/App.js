@@ -1,15 +1,20 @@
-
+import React from 'react';
 import Loginform from './components/Loginform/Loginform';
-import Register  from './components/Register/Register';
+import{BrowserRouter,Routes,Route} from 'react-router-dom'
+import Register from './components/Register/Register';
 
 
 
 
 function App() {
   return (
-    <div>
-    <Loginform/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Loginform />}></Route>
+      <Route path='/Register' element={<Register />}></Route>
+    </Routes>
+    
+    </BrowserRouter>
   );
 }
 

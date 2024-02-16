@@ -1,7 +1,10 @@
 import React from 'react';
 import './Loginform.css';
+import{Link} from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
+
+
 const Loginform = () => {
   return (
     <div className='wrapper'>
@@ -23,7 +26,7 @@ const Loginform = () => {
         <button type="submit">Login</button>
 
         <div className="register-link">
-          <p>Don't have an account?<a href="#">Register</a></p>
+          <p>Don't have an account?<Link to="/Register">Register</Link></p>
         </div>
         </form>
     </div>
